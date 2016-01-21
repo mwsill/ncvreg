@@ -23,7 +23,7 @@ ncvreg <- function(X, y, family=c("gaussian","binomial","poisson"), penalty=c("M
   if (gamma <= 2 & penalty=="SCAD") stop("gamma must be greater than 2 for the SCAD penalty")
   if (nlambda < 2) stop("nlambda must be at least 2")
   if (alpha <= 0) stop("alpha must be greater than 0; choose a small positive number instead")
-  if (length(penalty.factor)!=ncol(X)) stop("penalty.factor does not match up with X")
+  #if (length(penalty.factor)!=ncol(X)) stop("penalty.factor does not match up with X")
   if (any(is.na(y)) | any(is.na(X))) stop("Missing data (NA's) detected.  Take actions (e.g., removing cases, removing features, imputation) to eliminate missing data before passing X and y to ncvreg")
   if (family=="binomial" & length(table(y)) > 2) stop("Attemping to use family='binomial' with non-binary data")
 

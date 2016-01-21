@@ -6,4 +6,4 @@
 To install:
 
 * the latest released version: `install.packages("ncvreg")`
-* the latest version (requires `devtools`): `install_github("pbreheny/ncvreg")`
+* the latest version (requires `devtools`): `install_github("mwsill/ncvreg")`
